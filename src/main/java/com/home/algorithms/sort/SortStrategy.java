@@ -3,5 +3,6 @@ package com.home.algorithms.sort;
 import java.util.List;
 
 public interface SortStrategy {
-    void sort(List elements);
+    void sort(Integer[] elements);
+    void sort (List<Integer> elements);
 }
