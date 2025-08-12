@@ -3,7 +3,7 @@ package com.home.algorithms.sort.impl;
 import com.home.algorithms.sort.SortStrategy;
 import com.home.aop.advice.TrackExecutionTime;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,12 +11,11 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @Slf4j
-@Service
+@Component
 public class BubbleSort implements SortStrategy {
     @TrackExecutionTime
     @Override
     public void sort(Integer[] elements) {
-//        bubbleSortArray(elements);
         bubbleSortArrayOptimized(elements);
     }
 

@@ -17,7 +17,7 @@ public class ExecutionTimeAdvice {
         long startTime = currentTimeMillis();
         Object object = point.proceed();
         long endTime = currentTimeMillis();
-        log.info("---**************----HELLO-----------" +
+        log.info("Tracking execution time... " +
                 "Class name: " + point.getSignature().getDeclaringTypeName() +
                 "; Method name : " + point.getSignature().getName() +
                 "; Execution time: " + (endTime - startTime) + "ms.");
