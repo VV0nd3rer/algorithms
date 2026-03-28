@@ -28,6 +28,9 @@ class AlgorithmsApplicationTests {
     @Autowired
     SortStrategy bubbleSort;
 
+    /*
+    A simple sanity check test that will fail if the application context cannot start
+     */
     @Test
     void contextLoads() {
         log.info("Hello :)");
